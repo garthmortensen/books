@@ -8,14 +8,13 @@ README.md
 
 ## 1. Totals by Broad Category
 
-| Broad Category | Books | % of Total |
-|---|---|---|
-| Fiction — Speculative (Sci-Fi, Fantasy, Horror) | 189 | 63% |
-| Fiction — Literary / Historical / Other | 22 | 7% |
-| Nonfiction — Tech / History / Culture | 45 | 15% |
-| Nonfiction — Self-Help / Business / Parenting | 16 | 5% |
-| Nonfiction — Science / Nature / Philosophy | 22 | 7% |
-| Anthologies / Children's / Misc | 9 | 3% |
+```mermaid
+xychart-beta horizontal
+    title "Books by Broad Category"
+    x-axis ["Anthologies / Misc", "NF - Self-Help / Biz", "NF - Science / Phil", "Fiction - Literary / Hist", "NF - Tech / History", "Fiction - Speculative"]
+    y-axis "Books" 0 --> 200
+    bar [9, 16, 22, 22, 45, 189]
+```
 
 Fiction is the dominant mode, but nonfiction clusters appear in intense, topical bursts — you don't read nonfiction casually; you go *deep* on a subject, exhaust it, then switch back to fiction.
 
@@ -23,28 +22,13 @@ Fiction is the dominant mode, but nonfiction clusters appear in intense, topical
 
 ## 2. Top Subgenres (All Time)
 
-| Subgenre (grouped) | Count |
-|---|---|
-| Zombie Apocalypse / Horror | 55 |
-| LitRPG (all variants) | 35 |
-| Epic Fantasy | 24 |
-| Military Sci-Fi | 17 |
-| Hard Sci-Fi | 15 |
-| Climate Fiction | 11 |
-| Space Opera / AI | 11 |
-| Crypto / Blockchain | 8 |
-| Video Game History / Nonfiction | 7 |
-| Steampunk | 7 |
-| Civil War Fiction | 7 |
-| Internet History / Nonfiction | 6 |
-| Cyberpunk | 6 |
-| Dark Fantasy / Mercenary | 8 |
-| Vampire Horror | 4 |
-| Cozy Fantasy | 3 |
-| Greek Myth Retelling | 3 |
-| Philosophy (all) | 5 |
-| Linguistics / Language | 4 |
-| Parenting / Self-Help | 6 |
+```mermaid
+xychart-beta horizontal
+    title "Top Subgenres - All Time"
+    x-axis ["Greek Myth", "Cozy Fantasy", "Vampire Horror", "Linguistics", "Philosophy", "Parenting", "Cyberpunk", "Internet Hist", "Civil War", "Steampunk", "Video Game Hist", "Crypto", "Dark Fantasy", "Space Opera", "Climate Fic", "Hard Sci-Fi", "Military Sci-Fi", "Epic Fantasy", "LitRPG", "Zombie / Horror"]
+    y-axis "Books" 0 --> 60
+    bar [3, 3, 4, 4, 5, 6, 6, 6, 7, 7, 7, 8, 8, 11, 11, 15, 17, 24, 35, 55]
+```
 
 Zombie fiction alone accounts for ~18% of the entire list — the single largest subgenre by a wide margin, accumulated over multiple distinct binge runs. LitRPG is the fastest-growing category and now rivals zombies for recent attention.
 
@@ -52,23 +36,28 @@ Zombie fiction alone accounts for ~18% of the entire list — the single largest
 
 ## 3. Books per Year
 
-| Year | Books Read | Notable Subgenre(s) |
-|---|---|---|
-| 2014 | 1 | Political Philosophy |
-| 2015 | 2 | Military Thriller |
-| 2016 | 2 | Mystery, Military Thriller |
-| 2017 | 9 | Epic Fantasy (Sullivan), Linguistics |
-| 2018 | 14 | Civil War Fiction, Ancient Warfare, Hard Sci-Fi, LitRPG debut |
-| 2019 | 12 | Nature Nonfiction, Philosophy, Civil War spillover, Cybersecurity |
-| 2020 | 11 | Climate Fiction (KSR), Zombie Horror, Political Nonfiction, LitRPG |
-| 2021 | 22 | Crypto/Blockchain deep dive, Climate Fiction, Video Game History, Stephenson |
-| 2022 | 29 | Cyberpunk, Zombie binge (Blackmore), Internet History, Sanderson starts |
-| 2023 | 37 | Zombie mega-binge, Sanderson / Murderbot, Hard Sci-Fi, Business Nonfiction |
-| 2024 | 46 | Vampire Horror, Steampunk binge, Military Sci-Fi (Kloos), Bobiverse, LitRPG explosion |
-| 2025 | 43 | LitRPG dominates, AI/Tech nonfiction, Black Company, Greek Myth, Space Opera |
-| 2026 | 8* | LitRPG, Spellmonger, Cyberpunk return, Epic Fantasy |
+```mermaid
+xychart-beta
+    title "Books Read per Year"
+    x-axis ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026*"]
+    y-axis "Books" 0 --> 50
+    bar [1, 2, 2, 9, 14, 12, 11, 22, 29, 37, 46, 43, 8]
+```
 
 *2026 through March 1st.
+
+**Notable subgenres by year:**
+- **2014–2016:** Political Philosophy, Military Thriller, Mystery — sparse, eclectic
+- **2017:** Epic Fantasy binge begins with Sullivan, plus Linguistics
+- **2018:** Civil War Fiction, Ancient Warfare, Hard Sci-Fi, LitRPG debut
+- **2019:** Nature Nonfiction, Philosophy, Cybersecurity
+- **2020:** Climate Fiction dominates via KSR, Zombie Horror, Political Nonfiction
+- **2021:** Crypto/Blockchain deep dive, Video Game History, Stephenson
+- **2022:** Cyberpunk, Zombie binge via Blackmore, Internet History, Sanderson starts
+- **2023:** Zombie mega-binge, Sanderson / Murderbot, Hard Sci-Fi, Business Nonfiction
+- **2024:** Vampire Horror, Steampunk binge, Military Sci-Fi via Kloos, Bobiverse, LitRPG explosion
+- **2025:** LitRPG dominates, AI/Tech nonfiction, Black Company, Greek Myth, Space Opera
+- **2026*:** LitRPG, Spellmonger, Cyberpunk return, Epic Fantasy
 
 Reading volume has grown dramatically — from 1–2 books per year in the early period to 43–46 in 2024–2025. This reflects either improved tracking, audiobook adoption, or both. The acceleration is real and consistent.
 
@@ -161,23 +150,32 @@ Each cycle ends with **hard sci-fi or LitRPG as a reset** — genres that reward
 
 You are a **committed series reader**. The majority of fiction reading happens in runs of 3–10 consecutive books in the same series. Notable binges:
 
-| Series | Books | Period |
-|---|---|---|
-| Sullivan Riyria Chronicles + Revelations | 8 | 2016–2017 |
-| Jeff Shaara Civil War | 5 | 2018 |
-| Kim Stanley Robinson (various) | 11+ | 2020–2021 |
-| Keith C. Blackmore Mountain Man + Breeds | 8 | 2022 |
-| Brandon Sanderson Mistborn (orig. + Wax/Wayne) | 5 | 2022–2023 |
-| Martha Wells Murderbot | 7 | 2023 + 2025 |
-| D.J. Molles The Remaining | 4 | 2023 |
-| J.L. Bourne Day by Day Armageddon | 4 | 2022 |
-| Anne Rice Vampire Chronicles | 4 | Jan–Mar 2024 |
-| Cherie Priest Clockwork Century | 7 | May–Jul 2024 |
-| Marko Kloos Frontlines | 10 | Aug–Oct 2024 |
-| Dennis E. Taylor Bobiverse | 5 | Oct–Nov 2024 |
-| Matt Dinniman Dungeon Crawler Carl | 10+ | Nov 2024–Feb 2026 |
-| Glen Cook Black Company | 7 | Aug–Oct 2025 |
-| Terry Mancour Spellmonger | 6 | Dec 2025–Feb 2026 |
+```mermaid
+gantt
+    title Series Binge Timeline
+    dateFormat YYYY-MM
+    axisFormat %Y
+    section Fantasy
+        Sullivan Riyria - 8 books          :2016-06, 2017-12
+        Sanderson Mistborn - 5 books       :2022-10, 2023-06
+        Glen Cook Black Company - 7 books  :2025-08, 2025-10
+        Mancour Spellmonger - 6 books      :2025-12, 2026-02
+    section Zombie / Horror
+        Blackmore Mountain Man - 8 books   :2022-03, 2022-12
+        Molles The Remaining - 4 books     :2023-03, 2023-06
+        Bourne Day by Day - 4 books        :2022-06, 2022-09
+        Rice Vampire Chronicles - 4 books  :2024-01, 2024-03
+    section Sci-Fi
+        KSR various - 11+ books            :2020-01, 2021-12
+        Wells Murderbot - 7 books          :2023-01, 2023-06
+        Priest Clockwork Century - 7 books :2024-05, 2024-07
+        Kloos Frontlines - 10 books        :2024-08, 2024-10
+        Taylor Bobiverse - 5 books         :2024-10, 2024-11
+    section LitRPG
+        Dinniman DCC - 10+ books           :2024-11, 2026-02
+    section Civil War
+        Shaara Civil War - 5 books         :2018-01, 2018-12
+```
 
 Standalone titles appear almost exclusively as **transitions between series** — typically one nonfiction or literary novel serves as a bridge before the next series begins.
 
@@ -187,23 +185,24 @@ Standalone titles appear almost exclusively as **transitions between series** �
 
 Authors who appear 5+ times (across any series):
 
-| Author | Books | Primary Genre |
-|---|---|---|
-| Matt Dinniman | 11 | LitRPG |
-| Keith C. Blackmore | 14 | Zombie Horror |
-| Marko Kloos | 10 | Military Sci-Fi |
-| Kim Stanley Robinson | 11 | Climate / Hard Sci-Fi |
-| Michael J. Sullivan | 14 | Epic Fantasy |
-| Glen Cook | 8 | Dark Fantasy |
-| Terry Mancour | 6 | LitRPG |
-| Dennis E. Taylor | 5 | Hard Sci-Fi |
-| Martha Wells | 7 | Space Opera / AI |
-| Jeff Shaara | 5 | Historical War Fiction |
-| John Scalzi | 8 | Comic Sci-Fi |
-| J.L. Bourne | 4 | Zombie / Military |
-| Adrian Tchaikovsky | 3 | Hard Sci-Fi |
-| Neal Stephenson | 4 | Cyberpunk / Hard Sci-Fi |
-| Anne Rice | 4 | Vampire Horror |
+```mermaid
+xychart-beta horizontal
+    title "Author Loyalty - Books Read per Author"
+    x-axis ["Tchaikovsky", "Rice", "Stephenson", "Bourne", "Taylor", "Shaara", "Mancour", "Wells", "Cook", "Scalzi", "Kloos", "Dinniman", "KSR", "Blackmore", "Sullivan"]
+    y-axis "Books" 0 --> 16
+    bar [3, 4, 4, 4, 5, 5, 6, 7, 8, 8, 10, 11, 11, 14, 14]
+```
+
+| Author | Primary Genre |
+|---|---|
+| Blackmore, Sullivan | Zombie Horror, Epic Fantasy |
+| KSR, Dinniman | Climate / Hard Sci-Fi, LitRPG |
+| Kloos | Military Sci-Fi |
+| Cook, Scalzi | Dark Fantasy, Comic Sci-Fi |
+| Wells | Space Opera / AI |
+| Mancour | LitRPG |
+| Taylor, Shaara | Hard Sci-Fi, Historical War |
+| Bourne, Stephenson, Rice, Tchaikovsky | Zombie, Cyberpunk, Vampire, Hard Sci-Fi |
 
 Sullivan and Blackmore are tied at 14 books each — the all-time loyalty leaders, representing opposite ends of the fantasy spectrum (elegant Riyria adventure vs. brutal zombie horror). KSR and Scalzi represent the two modes of literary sci-fi: earnest and ironic.
 
@@ -248,35 +247,25 @@ Based on observed cycle patterns:
 
 ### Estimated Pages per Year
 
-| Year | Books | Est. Pages | Notes |
-|---|---|---|---|
-| 2014 | 1 | ~382 | Single book, small start |
-| 2015 | 2 | ~769 | |
-| 2016 | 2 | ~818 | |
-| 2017 | 11 | ~5,245 | Sullivan binge begins |
-| 2018 | 20 | ~9,898 | Civil War + LitRPG debut |
-| 2019 | 13 | ~5,674 | Philosophy + nature year |
-| 2020 | 12 | ~4,362 | KSR dominates |
-| 2021 | 34 | ~14,669 | Stephenson + crypto sprint |
-| 2022 | 44 | ~19,159 | Biggest volume year |
-| 2023 | 37 | ~14,540 | Zombie apex |
-| 2024 | 54 | ~20,921 | All-time peak — 4 complete series |
-| 2025 | 46 | ~17,508 | LitRPG + Black Company |
-| 2026* | 8 | ~4,845 | Through March 1 |
+```mermaid
+xychart-beta
+    title "Estimated Pages Read per Year"
+    x-axis ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026*"]
+    y-axis "Pages" 0 --> 22000
+    bar [382, 769, 818, 5245, 9898, 5674, 4362, 14669, 19159, 14540, 20921, 17508, 4845]
+```
 
 *Estimated total across all years: ~118,000 pages — roughly equivalent to reading the entire Lord of the Rings **60 times over**.*
 
 ### Pages by Genre (books with known counts)
 
-| Genre | Books w/counts | Total Pages | Avg per Book |
-|---|---|---|---|
-| Cyberpunk | 6 | ~4,898 | 816 |
-| LitRPG | 14 | ~8,547 | 610 |
-| Fantasy (Epic/Dark/Military) | 26 | ~12,790 | 491 |
-| Hard Sci-Fi / Climate | 38 | ~15,029 | 395 |
-| Zombie / Horror | 25 | ~9,365 | 374 |
-| Nonfiction (all) | 55 | ~20,024 | 364 |
-| Military Sci-Fi | 5 | ~1,049 | 209 |
+```mermaid
+xychart-beta horizontal
+    title "Average Pages per Book by Genre"
+    x-axis ["Military Sci-Fi", "Nonfiction", "Zombie / Horror", "Hard Sci-Fi / Climate", "Fantasy", "LitRPG", "Cyberpunk"]
+    y-axis "Avg Pages" 0 --> 900
+    bar [209, 364, 374, 395, 491, 610, 816]
+```
 
 LitRPG books average **610 pages** — nearly the longest genre per volume. Dungeon Crawler Carl entries alone span 721–849 pages each. The genre isn't just dominant by count; it represents a massive time investment per book. Cyberpunk's 816-page average is skewed by omnibus editions (*Shadowrun Legends*, *Cryptonomicon*).
 
@@ -328,14 +317,13 @@ The exceptions that suggest some new-release tracking: *The Ministry for the Fut
 
 ### Publication Decade of Books Read
 
-| Publication Decade | Books |
-|---|---|
-| 1940s–1950s | 3 |
-| 1980s | 9 |
-| 1990s | 18 |
-| 2000s | 35 |
-| 2010s | 132 |
-| 2020s | 81 |
+```mermaid
+xychart-beta
+    title "Books Read by Publication Decade"
+    x-axis ["1940s-50s", "1980s", "1990s", "2000s", "2010s", "2020s"]
+    y-axis "Books" 0 --> 140
+    bar [3, 9, 18, 35, 132, 81]
+```
 
 The 2010s dominate — most of the genre staples (Mistborn, Murderbot, Dungeon Crawler Carl, Kloos, Blackmore) published their key titles in that decade. The 2020s surge reflects both increasing pace and a growing willingness to pick up hot new titles.
 
@@ -347,19 +335,13 @@ The 2010s dominate — most of the genre staples (Mistborn, Murderbot, Dungeon C
 
 ### Top Publishers
 
-| Publisher | Books |
-|---|---|
-| Tor Books | 18 |
-| Macmillan | 16 |
-| Simon and Schuster | 14 |
-| Orbit | 9 |
-| Ballantine Books | 8 |
-| Penguin | 7 |
-| Createspace (self-pub) | 7 |
-| 47North (Amazon) | 5 |
-| Independently Published | 5 |
-| HarperCollins | 5 |
-| Del Rey | 5 |
+```mermaid
+xychart-beta horizontal
+    title "Top Publishers"
+    x-axis ["Del Rey", "HarperCollins", "Indie Published", "47North", "Createspace", "Penguin", "Ballantine", "Orbit", "Simon and Schuster", "Macmillan", "Tor Books"]
+    y-axis "Books" 0 --> 20
+    bar [5, 5, 5, 5, 7, 7, 8, 9, 14, 16, 18]
+```
 
 **Tor/Macmillan** dominates the fiction side — unsurprising given their deep catalog of SFF. **76 books (~25% of the full list) are self-published or have no listed publisher** — a surprisingly high number that reflects the indie LitRPG and web-serial pipeline. Authors like Shirtaloon (*He Who Fights with Monsters*), Alexander Wales (*Through Adversity*), and early Terry Mancour entries came through Createspace or direct publishing before reaching traditional deals.
 
